@@ -5,7 +5,9 @@ fetch("https://type.fit/api/quotes")
   .then((data) => {
     function buttonClick() {
       let randomArray = data[Math.floor(Math.random() * data.length)];
-      document.getElementById(`quote`).innerHTML = `Quote: ${randomArray.text}`;
+      document.getElementById(
+        `quote`
+      ).innerHTML = `Quote: <i>${randomArray.text}</i>`;
       document.getElementById(`author`).innerHTML =
         randomArray.author || "<i>Unknown</i>";
     }

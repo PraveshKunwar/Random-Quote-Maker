@@ -2,49 +2,10 @@ body {
   text-align: center;
   font-family: "Slabo 27px", "Roboto Slab", serif;
   color: white;
-  background: linear-gradient(191deg, #032ba8, #e17206, #ad2fae);
-  background-size: 600% 600%;
-
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-
-    width: 100%;
-    position: relative;
-  }
+  background: rgb(32, 32, 32);
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
 }
 
 .introduction h1 {
@@ -101,13 +62,196 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .introduction p:hover {
-    transform: scale(1.1);
-    transition: 0.9s all ease-in-out;
+.introduction #para {
+  position: relative;
+  margin: -1.5rem;
+}
+
+.main-content #button {
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto Slab";
+  font-weight: 900;
+  font-style: bold;
+
+  background: linear-gradient(270deg, #bf256f, #bfbc25);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
   }
-  .introduction h1:hover {
-    transform: scale(1.1);
-    transition: 0.7s all ease-in-out;
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*Animation maker for button hover */
+@keyframes buttonScaler {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.main-content {
+  position: relative;
+  margin-top: 10rem;
+}
+
+.main-content #quote {
+  animation: fadeInfadeOut 8s linear infinite;
+}
+
+.main-content #author {
+  animation: fadeAuthor 4s linear infinite;
+}
+
+@keyframes fadeAuthor {
+  0%,
+  100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes fadeInfadeOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-content #button {
+  transform: scale(1.1);
+  animation: buttonScaler 4s infinite;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.main-content #button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* ------------------ */
+
+.main-content #button2 {
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto Slab";
+  font-weight: 900;
+  font-style: bold;
+
+  background: linear-gradient(198deg, #e15413, #0f6bd5);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*Animation maker for button hover */
+@keyframes buttonScaler {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.main-content #button2 {
+  transform: scale(1.1);
+  animation: buttonScaler 4s infinite;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.main-content #button2:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
