@@ -2,10 +2,10 @@ body {
   text-align: center;
   font-family: "Slabo 27px", "Roboto Slab", serif;
   color: white;
-  background: rgb(32, 32, 32);
+  background: url("./background.gif");
+  background-repeat: no-repeat;
   width: 100%;
   position: relative;
-  min-height: 100vh;
 }
 
 .introduction h1 {
@@ -75,7 +75,7 @@ body {
   font-weight: 900;
   font-style: bold;
 
-  background: linear-gradient(270deg, #bf256f, #bfbc25);
+  background: linear-gradient(270deg, #f79ad4, #f0bfe1);
   background-size: 400% 400%;
 
   -webkit-animation: AnimationName 30s ease infinite;
@@ -135,9 +135,7 @@ body {
     0% {
       transform: scale(1, 1);
     }
-    50% {
-      transform: scale(1.05, 1, 05);
-    }
+
     100% {
       transform: scale(1, 1);
     }
@@ -218,45 +216,45 @@ body {
   font-weight: 900;
   font-style: bold;
 
-  background: linear-gradient(198deg, #e15413, #0f6bd5);
-  background-size: 400% 400%;
+  background: linear-gradient(46deg, #16dba8, #1ba1df, #1b53df);
+  background-size: 600% 600%;
 
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: AnimationName 13s ease infinite;
+  -moz-animation: AnimationName 13s ease infinite;
+  animation: AnimationName 13s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 51% 100%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
 }
 @-moz-keyframes AnimationName {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 51% 100%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
 }
 @keyframes AnimationName {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 51% 100%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
 }
 
