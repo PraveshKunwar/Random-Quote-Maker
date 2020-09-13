@@ -130,6 +130,20 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  @keyframes buttonScaler {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.05, 1, 05);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
 .main-content {
   position: relative;
   margin-top: 10rem;
@@ -137,6 +151,20 @@ body {
 
 .main-content #quote {
   animation: fadeInfadeOut 8s linear infinite;
+}
+
+.main-content #button2 #anchorTags {
+  text-decoration: none;
+  color: white;
+}
+
+.main-content #button2 #anchorTags:visited {
+  color: white;
+  text-decoration: none;
+}
+.main-content #button2 #anchorTags:active {
+  text-decoration: none;
+  color: white;
 }
 
 .main-content #author {
