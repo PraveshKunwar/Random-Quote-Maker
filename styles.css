@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  font-family: "Slabo 27px", "Roboto Slab", serif;
+  font-family: "Courier", "Roboto Slab", serif;
   color: white;
   background: url("./background.gif");
   background-repeat: no-repeat;
@@ -144,7 +144,28 @@ body {
 
 .main-content {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 5rem;
+}
+
+.introduction #Date {
+  text-decoration: underline;
+  font-style: italic;
+  color: rgb(128, 218, 235);
+}
+
+.introduction #time {
+  animation: timeChange 4s linear forwards;
+  color: rgb(255, 192, 203);
+}
+
+@keyframes timeChange {
+  0%,
+  100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.3, 1.15);
+  }
 }
 
 .main-content #quote {

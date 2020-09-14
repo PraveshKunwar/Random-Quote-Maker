@@ -31,3 +31,24 @@ fetch("https://type.fit/api/quotes")
     buttonClick();
     document.getElementById("button").onclick = buttonClick;
   });
+
+/** Time */
+function time() {
+  let date = new Date();
+  let dateArray = [date.getHours(), date.getMinutes(), date.getSeconds()];
+
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, "0");
+  var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = mm + "/" + dd + "/" + yyyy;
+
+  document.getElementById("Date").innerHTML = today;
+
+  document.getElementById(
+    "time"
+  ).innerHTML = `${dateArray[0]}:${dateArray[1]}:${dateArray[2]}`;
+}
+
+setInterval(time, 1000);
